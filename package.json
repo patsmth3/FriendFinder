@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "author": "Pat Smith",
   "license": "ISC",
@@ -13,7 +15,9 @@
     "cli": "^1.0.1",
     "express": "^4.16.4",
     "heroku": "^7.22.0",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "@snyk/protect": "latest"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "snyk": true
 }
